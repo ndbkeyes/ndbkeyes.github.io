@@ -127,15 +127,10 @@
 
 <script type="text/javascript">
   alert("alert");
+  var allText = "error";
   var txtFile = new XMLHttpRequest();
   txtFile.open("GET", "/assets/bio.txt", true);
-  txtFile.onreadystatechange = function() {
-    if (txtFile.readyState === 4 && txtFile.status == 200) {
-      allText = txtFile.responseText;
-    } else {
-      allText = "error!";
-    }
-  }
+  allText = txtFile.responseText;
   alert(allText);
   document.getElementById("bio").innerHTML = allText;
 </script>
