@@ -131,6 +131,8 @@
   txtFile.onreadystatechange = function() {
     if (txtFile.readyState === 4 && txtFile.status == 200) {
        allText = txtFile.responseText;
+    } else {
+       allText = "error";
     }
   document.getElementById('bio').innerHTML = allText;
 </script>
