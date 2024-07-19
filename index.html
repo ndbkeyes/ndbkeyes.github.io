@@ -129,7 +129,7 @@
   alert("alert");
   var allText = "error";
   var txtFile = new XMLHttpRequest();
-  txtFile.open("GET", "/assets/bio.txt", true);
+  txtFile.open("GET", "assets/bio.txt", true);
   allText = txtFile.responseText;
   alert(allText);
   document.getElementById("bio").innerHTML = allText;
