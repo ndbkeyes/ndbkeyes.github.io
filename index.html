@@ -124,15 +124,11 @@
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
 
-
-<script type="text/javascript">
-  alert("alert");
-  var allText = "error";
-  var txtFile = new XMLHttpRequest();
-  txtFile.open("GET", "assets/bio.txt", true);
-  allText = txtFile.responseText;
-  alert(allText);
-  document.getElementById("bio").innerHTML = allText;
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+  $().ready(function() {
+    $("#bio").html("Text added by jQuery code.");
+  });
 </script>
 
 </body>
