@@ -127,11 +127,13 @@
 
 <script type="text/javascript">
   alert("alert");
-  const fs = require('fs');
-  fs.readFile('/assets/bio.txt', (err, data) => {
-     if (err) throw err;
-        console.log(data.toString());
-  });
+  var txtFile = new XMLHttpRequest();
+  txtFile.open("GET", "/assets/bio.txt", true);
+  txtFile.onreadystatechange = function() {
+    if (txtFile.readyState === 4 && txtFile.status == 200) {
+       allText = txtFile.responseText;
+    }
+  document.getElementById("bio").innerHTML = allText;
 </script>
 
 </body>
