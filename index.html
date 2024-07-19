@@ -126,20 +126,12 @@
 
 
 <script type="text/javascript">
-  alert("check1");
-  var txtFile = new XMLHttpRequest();
-  alert("check2");
-  txtFile.open("GET", "/assets/bio.txt", true);
-  alert("check3");
-  txtFile.onreadystatechange = function() {
-    if (txtFile.readyState === 4 && txtFile.status == 200) {
-       allText = txtFile.responseText;
-    } else {
-       allText = "error";
-    }
-  alert("check4");
-  document.getElementById('bio').innerHTML = allText;
-  alert("check5");
+  alert("alert");
+  const fs = require('fs');
+  fs.readFile('/assets/bio.txt', (err, data) => {
+     if (err) throw err;
+        console.log(data.toString());
+  });
 </script>
 
 </body>
