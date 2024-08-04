@@ -273,3 +273,8 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .div-link {
   text-decoration: none;
 }
+
+.caption-text {
+  font-size: 14px;
+  font-style: italic;
+}
