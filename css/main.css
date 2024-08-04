@@ -247,7 +247,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   float: left;
-  width: 500px;
+  width: 33%;
   margin:20px;
 }
 
@@ -263,4 +263,5 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 .card-img {
   margin: auto;
+  width:90%;
 }
