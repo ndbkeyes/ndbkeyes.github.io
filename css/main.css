@@ -265,3 +265,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   margin: auto;
   width:90%;
 }
+
+.div-link {
+  text-decoration:none;
+}
