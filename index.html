@@ -6,51 +6,66 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="icon" type="image/x-icon" href="assets/favicon.png">
-	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script>
-		$(function() {
-		  $('#header').load('header.html');
-		  $('#footer').load('footer.html');
-		  alert("test");
-		});
-	</script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
 
 
-
 <!-- Navbar (sit on top) -->
-<div id="header"></div>
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item w3-button" style="font-size:25px;background-color:#cfcecc;"><b>nash</b> keyes</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="climate.html" class="w3-bar-item w3-button" style="font-size:20px;">climate</a>
+      <a href="community.html" class="w3-bar-item w3-button" style="font-size:20px;">community</a>
+      <a href="craft.html" class="w3-bar-item w3-button" style="font-size:20px;">craft</a>
+      <a href="contact.html" class="w3-bar-item w3-button" style="font-size:20px;"><i>contact</i></a>
+    </div>
+  </div>
+</div>
 
-<!-- Image -->
+<!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <img class="w3-image" src="assets/site_header_v2.jpg">
+  <img class="w3-image" src="assets/site_header_v2.jpg" height="400">
     <div class="w3-display-top w3-margin-top w3-left">
+    <!--<h1 class="w3-xxlarge w3-text-white"><span class="w3-hide-small w3-text-light-grey"><b>Nash</b> Keyes</span></h1>-->
   </div>
 </header>
+
 
   
 <!-- Page content -->
 <div class="w3-content w3-padding" style="max-width:1564px">
 
     <!-- About Section -->
-    <div class="w3-container w3-padding-32" id="about">
+    <div class="w3-container" id="about">
       <h3 class="w3-border-bottom w3-border-light-grey">about</h3>
-      <div><p id="bio" style="whitespace:pre-line;"></p></div>
+      <div>
+		<p id="bio1" style="whitespace:pre-line;">I'm Nash Keyes (they/them), an early-career professional in climate adaptation and planning. I am passionate about the intersections of urban studies, geography, water, and environmental justice, including community-based adaptation planning, fighting green gentrification, and extreme heat and flood community preparedness. My skills range from GIS, climate science, mathematical modeling, and research to writing, design, public speaking, and facilitation.</p>
+		<p id="bio2" style="whitespace:pre-line;">I graduated from Yale University in 2021 with a B.A. in Applied Mathematics focusing on Climate Science. Currently, I am an ORISE Fellow at the U.S. Environmental Protection Agency's Office of Water working on equitable water utility climate adaptation, and I plan to pursue a joint masters in urban planning and geographical & environmental systems next year. Outside of work, I am an avid amateur woodworker and fledgling community organizer.</p>
+</p></div>
     </div>
+
 
 <!-- End page content -->
 </div>
 
-<div id="footer"></div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16" style="margin-top:25px;">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
 
 
-
+<!--
 <script>
-  $.get('assets/bio.txt', function(data) {
-   document.getElementById("bio").innerHTML = data;
+  alert("test");
+  $.get("assets/bio.txt", function(data) {
+	document.getElementById("bio2").innerHTML = data;
   }, 'text');
 </script>
+-->
 
 
 </body>
